@@ -42,7 +42,7 @@ st.sidebar.write("## 👆请在上方点击所要使用的工具 ##")
 st.markdown(
     '''
     <style>
-    #root > div:nth-child(1) > div.withScreencast > div > div > div > section.st-emotion-cache-vk3wp9.eczjsme11
+    #root > div:nth-child(1) > div.withScreencast > div > div > div > section.st-emotion-cache-1gv3huu.eczjsme16
     {
     visibility: hidden !important;
     }
@@ -72,7 +72,7 @@ if btn is True:
             input
             {
             visibility: collapsed !important;
-            background-color: rgb(220, 240, 220);
+            background-color: rgb(220, 240, 220) !important;
             }
             </style>
             ''',
@@ -84,7 +84,7 @@ if btn is True:
             <style>
             #root > div:nth-child(1) > div.withScreencast > div > div > div > section.st-emotion-cache-vk3wp9.eczjsme11
             {
-            visibility: visible;
+            visibility: visible !important;
             }
             </style>
             ''',
