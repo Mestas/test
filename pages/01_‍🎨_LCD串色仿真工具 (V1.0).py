@@ -1,8 +1,9 @@
-import numpy as np
-import pandas as pd
-import math
 import streamlit as st
-from PIL import Image
+import requests
+import json
+import base64
+from hashlib import sha1
+
 # st.balloons()  #过场动画
 
 st.set_page_config(
@@ -31,11 +32,6 @@ if final_click is True:
         st.write(user_name)
 
         # 将使用者保存到txt文件中
-        import requests
-        import json
-        import base64
-        from hashlib import sha1
-
         # 从 Streamlit Secret 获取 GitHub PAT
         github_pat = st.secrets['github_token']
 
