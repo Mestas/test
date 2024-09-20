@@ -26,7 +26,7 @@ with col2:
 final_click = st.button('***点击获取结果***', key=99)
 if final_click is True:
     # 这是另一个页面
-    if name in st.session_state:
-        value_from_home = st.session_state[name]
+    if 'user_name' in st.session_state:
+        value_from_home = st.session_state['user_name']
         st.write(value_from_home)
         
