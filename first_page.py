@@ -68,7 +68,7 @@ if btn is True:
             st.write(name + ' 登录成功，欢迎使用')
 
         # 将name信息保存到session状态中
-        st.session_state['user_input'] = name  # 将用户输入存储在会话状态中
+        st.session_state['user_name'] = name  # 将用户输入存储在会话状态中
             
         # 设置登录框关闭
         st.markdown(
